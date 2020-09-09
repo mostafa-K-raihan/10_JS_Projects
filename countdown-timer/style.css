@@ -9,62 +9,52 @@ body {
 	background-size: cover;
 	background-position: center center;
 	font-family: 'Lato', sans-serif;
-	min-height: 100vh;
+	max-height: 80vh;
 	margin: 0;
 }
 
 .container {
 	display: flex;
 	flex-direction: column;
-	margin: 10rem;
 	min-height: 100vh;
-	
+	margin: 0 5rem;
+	padding: 2rem;
 }
 
-.container > .event-title {
-	font-size: 3rem;
-	padding: 1rem;
-	background-color: aliceblue;
-}
-
-.container > .today {
-	font-size: 1.5rem;
-	padding: 1rem;
-	background-color: antiquewhite;
-}
-
-.counter {
-	padding: 1rem;
+.event-wrapper, 
+.counter-wrapper {
 	display: flex;
-	justify-content: space-evenly;
-	font-size: 2rem;
-	margin: 4rem;
+	padding: 2rem;
 }
 
-.countdown-unit {
+.event-wrapper {
+	flex-direction: column;
+}
+
+.counter-wrapper {
+	justify-content: space-between;
+}
+
+.counter-unit {
 	display: flex;
 	flex-direction: column;
-	margin: .5rem;
-	border: 1px solid #7d0633;
-	background-color: #7d0633;
-	opacity: .3;
-	border-radius: .5rem;
 }
 
-.countdown-unit:first-child {
-	border-top-left-radius: 2rem;
-	border-bottom-left-radius: 2rem;
+.counter-number,
+.counter-text {
+	background-color: rgba(126, 15, 50, .5);
+	color: whitesmoke;
 }
 
-.countdown-unit:last-child {
-	border-top-right-radius: 2rem;
-	border-bottom-right-radius: 2rem;
+.counter-text {
+	background-color: unset;
+	display: flex;
+	justify-content: center;
 }
 
-.counter, .counter-text {
-	color: #f6f6f6;
-}
-
-.counter {
-	font-size: 2rem;
+.counter-number {
+	padding: 5rem;
+	border-radius: 1rem;
+	font-size: 5rem;
+	box-shadow: 1.5rem 1rem 1.5rem rgba(120, 10, 40, .5);
 }
