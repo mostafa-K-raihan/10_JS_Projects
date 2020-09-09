@@ -8,6 +8,7 @@ body {
 	background-image: url('./image3.jpg');
 	background-size: cover;
 	background-position: center center;
+	color: whitesmoke;
 	font-family: 'Lato', sans-serif;
 	max-height: 80vh;
 	margin: 0;
@@ -43,13 +44,14 @@ body {
 .counter-number,
 .counter-text {
 	background-color: rgba(126, 15, 50, .5);
-	color: whitesmoke;
 }
 
 .counter-text {
 	background-color: unset;
 	display: flex;
+	font-size: 1.5rem;
 	justify-content: center;
+	padding: 1.5rem;
 }
 
 .counter-number {
